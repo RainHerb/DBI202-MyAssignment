@@ -27,7 +27,7 @@ FROM Student s INNER JOIN Attendance a ON s.StudentID = a.StudentID
 WHERE s.StudentID IN (
 SELECT s.StudentID FROM
 Student_Assessment sa INNER JOIN Student s ON sa.StudentID = s.StudentID
-WHERE sa.Score = 10 AND sa.AssessmentID = 'DBI202 PE' ) AND StudentName LIKE 'Nguyen%'
+WHERE sa.Score = 10 AND sa.AssessmentID = 'DBI202 PE' ) AND StudentName LIKE 'Vu%'
 GO
 
 --Store procedure to calculate the averrage score of student--
@@ -57,5 +57,5 @@ AS
 	END
 GO
 
-INSERT INTO Enroll VALUES('SE1602 DBI202', 'HE000001')
+INSERT INTO Enroll VALUES('SE1634 DBI202', 'HE160583')
 GO
